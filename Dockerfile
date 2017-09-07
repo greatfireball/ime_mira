@@ -1,7 +1,7 @@
+FROM ubuntu:xenial
+
 LABEL maintainer="frank.foerster@ime.fraunhofer.de"
 LABEL description="Dockerfile providing the mira assembler"
-
-FROM ubuntu:xenial
 
 RUN apt install --yes wget bzip2
 
