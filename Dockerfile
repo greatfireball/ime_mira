@@ -7,4 +7,4 @@ RUN apt install --yes wget bzip2
 
 RUN wget -O /tmp/mira.tar.bz2 https://sourceforge.net/projects/mira-assembler/files/MIRA/stable/mira_4.0.2_linux-gnu_x86_64_static.tar.bz2/download && cd /tmp/ && tar xjf mira.tar.bz2 && rm mira.tar.bz2 && mv /tmp/mira* /opt/
 
-EXPORT PATH=/opt/mira_4.0.2_linux-gnu_x86_64_static/bin:$PATH
+ENV PATH=/opt/mira_4.0.2_linux-gnu_x86_64_static/bin:$PATH
